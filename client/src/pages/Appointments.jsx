@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import {AppContext} from '../context/AppContext';
 import { assets } from '../assets/assets_frontend/assets';
+import RelatedDoctors from '../components/RelatedDoctors';
 
 export default function Appointments() {
 
@@ -123,6 +124,8 @@ export default function Appointments() {
         </div>
         <button className='bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6 hover:scale-105 transition-all duration-300'>Book an appointment</button>
       </div>
+
+      <RelatedDoctors docId={docId} speciality={docInfo.speciality} />
     </div>
   )
 }
