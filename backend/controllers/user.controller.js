@@ -73,4 +73,14 @@ const loginUser = async (req,res) => {
   }
 }
 
+//API to get User Profile
+const getProfile = async (req,res) => {
+  try {
+    
+    const { userId } = req.body
+  } catch (error) {
+    
+  }
+}
+
 export {registerUser, loginUser}
